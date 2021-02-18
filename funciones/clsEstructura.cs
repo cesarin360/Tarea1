@@ -88,10 +88,7 @@ namespace tarea1
                 for (int j = 0; j < 3; j++)
                 {
                     workSheet.Cells[i, columna[j]] = matriz[i-1,j];
-                    //j++
                 }
-                //i++
-
             }
            
             xlWorkBook.Close(null,null,null);
@@ -100,39 +97,7 @@ namespace tarea1
             Marshal.ReleaseComObject(workSheet);
             Marshal.ReleaseComObject(xlWorkBook);
             Marshal.ReleaseComObject(xlApp);
-
-
-            /*workSheet.Cells[1, "B"] = 0;
-            workSheet.Cells[1, "C"] = 0;
-            workSheet.Cells[2, "A"] = 0;
-            workSheet.Cells[2, "B"] = 0;
-            workSheet.Cells[2, "C"] = 0;
-            workSheet.Cells[3, "A"] = 0;
-            workSheet.Cells[3, "B"] = 0;
-            workSheet.Cells[3, "C"] = 0;
-       */
-
-            /*
-             * var excelApp = new Excel.Application();
-    // Make the object visible.
-    excelApp.Visible = true;
-
-    // Create a new, empty workbook and add it to the collection returned
-    // by property Workbooks. The new workbook becomes the active workbook.
-    // Add has an optional parameter for specifying a praticular template.
-    // Because no argument is sent in this example, Add creates a new workbook.
-    excelApp.Workbooks.Add();
-
-    // This example uses a single workSheet. The explicit type casting is
-    // removed in a later procedure.
-    Excel._Worksheet workSheet = (Excel.Worksheet)excelApp.ActiveSheet;
-             */
-
         }
-
-
-
-
     }
 
 
